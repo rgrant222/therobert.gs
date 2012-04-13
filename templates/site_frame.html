@@ -1,0 +1,15 @@
+{% extends 'base_site.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row" id="header">
+        {% block header %}{% endblock header %}
+    </div>
+    <div class="row" id="content">
+        {% block content %}{% endblock content %}
+    </div>
+    <div class="row" id="footer">
+        {% block footer %}{% endblock footer %}
+    </div>
+</div>
+{% endblock body %}
