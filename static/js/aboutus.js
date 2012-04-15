@@ -1,5 +1,4 @@
 var data = undefined;
-var data = undefined;
 var d3HookId = '#d3_start';
 
 $(document).ready(function () {
