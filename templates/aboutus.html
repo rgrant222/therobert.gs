@@ -1,5 +1,10 @@
 {% extends 'base_page.html' %}
 
+{% block extra_head %}
+<script type="text/javascript" src="/static/js/d3.v2.min.js"></script>
+<script type="text/javascript" src="/static/js/aboutus.js"></script>
+{% endblock extra_head %}
+
 {% block content %}
 <div class="hero-unit">
   <h1>About Us</h1>
@@ -8,32 +13,7 @@ projects, eh? Below, you'll find no less than a side-by-side comparison of
 Bob and Rob that covers a number of different aspects. Enjoy!
   </p>
 </div>
-<div class="row">
-  <div class="span4 offset1">
-    <h1>Bob</h1>
-    <div class="row">
-      <div class="span1">
-        <p>Badge</p>
-      </div>
-      <div class="span3">
-        <p>Sentence</p>
-      </div>
-    </div>
-  </div>
-  <div class="span2">
-    <h1>v</h1>
-  </div>
-  <div class="span4">
-    <h1>Rob</h1>
-    <div class="row">
-      <div class="span1">
-        <p>Badge</p>
-      </div>
-      <div class="span3">
-        <p>Sentence</p>
-      </div>
-    </div>
-  </div>
+<div id="d3_start">
 </div>
 {% endblock content %}
 
