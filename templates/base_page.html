@@ -1,16 +1,5 @@
 {% extends 'site_frame.html' %}
 
-{% block extra_head %}
-<style type="text/css">
-html, body {
-  min-height: 100%;
-}
-#footer {
-  border-top: 2px solid #33B5E5;
-  padding: .71em;
-}
-</style>
-{% endblock extra_head %}
 
 {% block header %}
 <div class="navbar">
@@ -22,6 +11,7 @@ html, body {
           {% for item in menu_items %}
             <li><a href="{{ item.href }}">{{ item.text }}</a></li>
           {% endfor %}
+        </ul>
       {% endif %}
     </div>
   </div>
