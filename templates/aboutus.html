@@ -16,28 +16,26 @@
 
 
 <h1 class="page-header">Questionnaire</h1>
-<table class="table table-bordered">
+<table class="table">
 	<thead>
 		<tr>
 			<th><h4>Questions</h4></th>
-			<th><h4>Rob's Answers</h4></th>
-			<th><h4>Bob's Answers</h4></th>
+			{% for person in people %}
+				<th><h4>{{ person }}'s Answers</h4></th>
+			{% endfor %}
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>What is your name?</td>
-			<td>
-				My full name?  I don't think so... how about we'll just stick with
-				Robert.
-			</td>
-			<td>
-				I mean... my first name is Robert, won't that do?  You don't really
-				need to know the whole thing, right?  Great.
-			</td>
-		</tr>
+		{% for question in questions %}
+			<tr>
+				<td>
+					{{ question.question }}
+				</td>
+				{% for person in people %}
+					<td>{{ question.answers|lookup:person }}</td>
+				{% endfor %}
+			</tr>
+		{% endfor %}
 	</tbody>
 </table>
 {% endblock content %}
-
-
