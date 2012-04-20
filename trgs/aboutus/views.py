@@ -32,8 +32,7 @@ def default(request):
       {
       'question': 'How old were you when you used a computer for the first time?',
       'answers': {
-        'Rob': ('I was 6!  It was 1992, and the computer (which cost a fortune,',
-                'by the way) was a 386 DX clocked at a blazing 33Mhz!!'),
+        'Rob': 'I was 6!  It was 1992, and the computer (which cost a fortune, by the way) was a 386 DX clocked at a blazing 33Mhz!!',
         'Bob': "Uh, ask me later... I can't seem to recall...",
         },
       },
