@@ -26,14 +26,14 @@ def default(request):
       'question': 'Where were you born?',
       'answers': {
         'Rob': 'Bristol, England',
-        'Bob': 'Lawrenceville, Georgia',
+        'Bob': 'Mesquite, Texas',
         },
       },
       {
       'question': 'How old were you when you used a computer for the first time?',
       'answers': {
         'Rob': 'I was 6!  It was 1992, and the computer (which cost a fortune, by the way) was a 386 DX clocked at a blazing 33Mhz!!',
-        'Bob': "Uh, ask me later... I can't seem to recall...",
+        'Bob': "Dad tells me I was 3 years old using a computer of his at work learning my shapes from a program he had written FORTRAN. I don't remember this, but I guess I've never had any problems identifying shapes...",
         },
       },
   ]
