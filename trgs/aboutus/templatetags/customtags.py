@@ -11,7 +11,7 @@ def lookup(d, k, f=""):
   except Exception:
     return ""
 
-@register.filter(name="lookup")
+@register.filter(name="index")
 def index(d, i):
   try:
     return d[i]
