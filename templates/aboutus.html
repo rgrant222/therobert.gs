@@ -3,6 +3,9 @@
 {% block extra_head %}
 <script type="text/javascript" src="/static/js/d3.v2.min.js"></script>
 <script type="text/javascript" src="/static/js/aboutus.js"></script>
+<script type="text/javascript">
+    var questions = {{ questions }};
+</script>
 {% endblock extra_head %}
 
 {% block content %}
@@ -15,6 +18,9 @@
 </div>
 
 {% load customtags %}
+<div id="d3">
+
+</div>
 <h1 class="page-header">Questionnaire</h1>
 <table class="table">
 	<thead>
