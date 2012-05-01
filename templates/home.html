@@ -20,8 +20,14 @@
                     <li class="span6">
                         <div class="thumbnail">
                             <div class="well">
-                                <span><h4>{{ post.author }}</h4></span>
-                                <span><h6>{{ post.date|date:"D d M Y" }}</h6></span>
+                                <div class="row">
+                                    <div class="pull-left">
+                                        <h4>author: <strong>{{ post.author }}</strong></h4>
+                                    </div>
+                                    <div class="pull-left">
+                                        <h6>{{ post.date|date:"D d M Y" }}</h6>
+                                    </div>
+                                </div>
                                 <h3>{{ post.title }}</h3>
                             </div>
                             <p>{{ post.content }}</p>
