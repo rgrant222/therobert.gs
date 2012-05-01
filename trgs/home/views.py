@@ -3,6 +3,7 @@
 from django.template import Context, RequestContext, loader
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
+import pymongo
 
 def home(request):
 	c = {}
